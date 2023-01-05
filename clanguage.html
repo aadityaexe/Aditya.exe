@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>C LANGUAGE</title>
+    <style> 
+    h3{color: rgb(154, 16, 16);}
+    </style>
+</head>
+<body background="background/BG2.png" style="color: aqua;">
+    <main style="background-color: rgba(0, 0, 0, 0.395);">
+        <div>
+            <h3>MATRIX MULTIPLICATION</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dl-4P29NhfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <BR>
+                <section>
+                    <big style="color: darkgreen;">CODE</big>
+                      <pre>
+                        <big>
+                            #include<stdio.h>
+                            int main()
+                            {
+                                int a[3][3],b[3][3],c[3][3];
+                                int i,j,k;
+                                printf("enter elements of first matrix");
+                                for(i=0;i<3;i++)
+                                {
+                                    for(j=0;j<3;j++)
+                                    {
+                                        scanf("%d",&a[i][j]);
+                                    }
+                                }
+                                printf("enter elements of 2nd matrix");
+                                for(i=0;i<3;i++)
+                                {
+                                    f or(j=0;j<3;j++)
+                                    {
+                                        scanf("%d",&b[i][j]);
+                                    }
+                                }
+                                for(i=0;i<3;i++)
+                                {
+                                    for(j=0;j<3;j++)
+                                    {
+                                        c[i][j]=0;
+                                        for(k=0;k<3;k++)
+                                        {
+                                            c[i][j]=c[i][j]+a[i][k]*b[k][j];
+                                        }
+                                    }   
+                                }
+                                 printf("MULTIPLICATION of matrix is\n");
+                                 for(i=0;i<3;i++)
+                                {
+                                    for(j=0;j<3;j++)
+                                    {
+                                         printf("%d\n",c[i][j]);
+                                    }
+                                }
+                            }
+                        </big>
+                      </pre>
+                </section>
+            
+        </div>
+            <hr>
+        <div>
+            <h3>SIMPLE INTEREST</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ueUPkVhdW28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <br>
+                <section>
+                    <big style="color: darkgreen;">CODE</big>
+                      <pre>
+                        
+                      </pre>
+                </section>
+
+        </div>
+        <HR>
+        <div>
+            <h3>ADDITION OF MATRIX</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/aaHRKLuTuAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <section>
+                    <big style="color: darkgreen;">CODE</big>
+                      <pre>
+                        <big>
+                            #include<stdio.h>
+                                int main()
+                                {
+                                    int a[3][3],b[3][3],c[3][3];
+                                    int i,j;
+                                    printf("enter elements of first array");
+                                    for(i=0;i<3;i++)
+                                    {
+                                        for(j=0;j<3;j++)
+                                        {
+                                            scanf("%d",&a[i][j]);
+                                        }
+                                    }
+                                    printf("enter elements of 2nd array");
+                                    for(i=0;i<3;i++)
+                                    {
+                                        for(j=0;j<3;j++)
+                                        {
+                                            scanf("%d",&b[i][j]);
+                                        }
+                                    }
+                                    for(i=0;i<3;i++)
+                                    {
+                                        for(j=0;j<3;j++)
+                                        {
+                                          c[i][j]=c[i][j]+a[i][j];
+                                        }
+                                          
+                                    }
+                                     printf("elements of array is\n");
+                                     for(i=0;i<3;i++)
+                                    {
+                                        for(j=0;j<3;j++)
+                                        {
+                                             printf("%d\t",c[i][j]);
+                                        }
+                                        printf("\n");
+                                    }
+                                } 
+                        </big>
+                      </pre>
+                </section>
+        </div>
+        <hr>
+        <div>
+            <h3>Fibonacci Series</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/g2oH3Uj-zDU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <section>
+                <big style="color: darkgreen;">CODE</big>
+                <pre><big>
+                    #include<stdio.h>    
+                        int main()    
+                        {    
+                           int a=0,b=1,sum,i,n;    
+                           printf("Enter the number of elements:");    
+                           scanf("%d",&n);    
+                           printf("%d %d\n",a,b);    
+                           for(i=2;i<.n;++i)       
+                           {  
+                             sum=a+b;    
+                             printf("%d\n",sum);    
+                             a=b;    
+                             b=sum;    
+                           }    
+                        } 
+                    </big>   
+                </pre>
+            </section>
+        </div>
+    </main>   
+</body>
+</html>
